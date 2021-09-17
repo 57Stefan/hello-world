@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @keyframes box {
+            0% {
+                background: radial-gradient( rgb(255, 255, 255) 0px, #050210 170px);
+            }
+
+            33% {
+                background: radial-gradient( rgb(255, 255, 255) 0px, #050210 200px);
+            }
+
+            66% {
+                background: radial-gradient( rgb(255, 255, 255) 0px, #050210 225px);
+            }
+
+            100% {
+                background: radial-gradient( rgb(255, 255, 255) 0px, #050210 250px);
+            }
+        }
+
+        @keyframes circle {
+            0% {
+                transform:rotate(45deg);
+            }
+
+            33% {
+                transform:rotate(70deg);
+            }
+
+            66% {
+                transform:rotate(100deg);
+            }
+
+            100% {
+                transform:rotate(150deg);
+            }
+        }
+
+        @keyframes circle2 {
+            0% {
+                background: radial-gradient(#000a97 0px, #050210 50px);
+            }
+
+            33% {
+                background: radial-gradient(#000a97 0px, #050210 70px);
+            }
+
+            66% {
+                background: radial-gradient(#000a97 0px, #050210 100px);
+            }
+
+            100% {
+                background: radial-gradient(#000a97 0px, #050210 250px);
+            }
+        }
+
+body {
+                font-family: sans-serif;
+                color: white;
+
+
+            }
+
+            #main-container {
+                width: 900px;
+                margin: 0 auto;
+            }
+
+            .box {
+                width: 500px;
+                height: 500px;
+                margin: 0 auto;
+            }
+
+#box1 {
+
+    background: radial-gradient( rgb(255, 255, 255) 0px, #050210 170px);
+    filter:brightness(0.7);
+
+    animation: box 1s ease infinite;
+}
+
+#box2 {
+
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to right, #fb5dad, #55fb9f, #b97aff);
+    border-radius: 100%;
+    margin: 0 auto;
+                left: 0;
+                right: 0;
+                bottom: 270px;
+
+                animation: circle 1s ease infinite;
+    
+}
+
+#box3 {
+
+position: absolute;
+width: 200px;
+height: 200px;
+background: radial-gradient(#000a97 0px, #050210 150px);
+border-radius: 100%;
+margin: 0 auto;
+                left: 0;
+                right: 0;
+                bottom: 290px;
+
+                animation: circle2 1s ease infinite;
+
+}
+    </style>
+</head>
+<body>
+    <div id="main-container">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+</div>
+</body>
+</html>
